@@ -14,7 +14,7 @@ app.use("/login",Logincontrol);
 
 // AIzaSyAkWEpj-xLA_hed1s02kGcAWiQz_FOO4wM
 
-app.listen(process.env.PORT ,async()=>{
+app.listen(process.env.PORT || 3000 ,async()=>{
     try{
          await mongoose.connect("mongodb+srv://parikshitpatil:Parikshit123@cluster0.4vt0nwr.mongodb.net/?retryWrites=true&w=majority")
          console.log("done")
